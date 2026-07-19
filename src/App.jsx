@@ -2,6 +2,8 @@ import { Route, Routes } from "react-router-dom";
 import Header from "./components/layout/Header";
 import Home from "./router/Home";
 import Service from "./router/Services";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
         <Route path="/service" element={<Service />}></Route>
         <Route path="/" element={<Home />}></Route>
       </Routes>
+
     </>
   );
 }
