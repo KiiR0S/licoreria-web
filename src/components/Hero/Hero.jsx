@@ -11,7 +11,7 @@ const HeroData = [
     img: imagen,
     subtitle: "Bebida",
     title: "Cerveza",
-    title2: "Corona",
+    title2: "PILSEN",
     description: "lorem omreaomfdoasmofadmosfmosfmoasdfoas",
   },
   {
@@ -19,7 +19,7 @@ const HeroData = [
     img: imagen,
     subtitle: "Bebida",
     title: "Cerveza",
-    title2: "Corona",
+    title2: "PILSEN",
     description: "lorem omreaomfdoasmofadmosfmosfmoasdfoas",
   },
   {
@@ -27,7 +27,7 @@ const HeroData = [
     img: imagen,
     subtitle: "Bebida",
     title: "Cerveza",
-    title2: "Corona",
+    title2: "PILSEN",
     description: "lorem omreaomfdoasmofadmosfmosfmoasdfoas",
   },
   {
@@ -35,7 +35,7 @@ const HeroData = [
     img: imagen,
     subtitle: "Bebida",
     title: "Cerveza",
-    title2: "Corona",
+    title2: "PILSEN",
     description: "lorem omreaomfdoasmofadmosfmosfmoasdfoas",
   },
 ];
@@ -79,7 +79,7 @@ const Hero = () => {
                       <img
                         src={data.img}
                         alt=""
-                        className="w-[300px] h-[300px] sm:h-[450px] sm:w-[300px] sm:scale-105 lg:scale-110 object-contain mx-auto drop-shadow-[-8px_4px_6px_rgba(0,0,0 4)]relative z-40"
+                        className="w-[300px] h-[300px] sm:h-[450px] sm:w-[450px] sm:scale-105 lg:scale-110 object-contain mx-auto drop-shadow-[-8px_4px_6px_rgba(0,0,0 4)]relative z-40"
                       />
                     </div>
                   </div>
