@@ -42,7 +42,7 @@ const HeroData = [
 
 const Hero = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container">
       <div className="overflow-hidden rounded-3xl min-h-[550px] sm:min-h-[650px] hero-bg-color flex justify-center items-center">
         <div className="container pb-8 sm:pb-0">
           {/* Hero section */}
@@ -63,19 +63,46 @@ const Hero = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2">
                   {/* seccion texto */}
                   <div className="flex flex-col justify-center gap-4 sm:pl-10 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:oder-1 relative z-10">
-                    <h1 className="text-2xl sm:text-6xl lg:text-2xl font-bold">{data.subtitle}</h1>
-                    <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">{data.title}</h1>
-                    <h1 className="text-5xl uppercase text-white dark:text-white/5 sm:text-[80px] md:text-[100px] xl:text-[150px] font-bold">{data.title2}</h1>
-                    <div>
-                      <Button text="Comprar Ahora"
-                      bgColor="bg-red-500"
-                      textColor="text-white"
+                    <h1
+                      data-aos="zoom-out"
+                      data-aos-duration="500"
+                      data-aos-once="true"
+                      className="text-2xl sm:text-6xl lg:text-2xl font-bold"
+                    >
+                      {data.subtitle}
+                    </h1>
+                    <h1
+                      data-aos="zoom-out"
+                      data-aos-duration="500"
+                      data-aos-once="true"
+                      className="text-5xl sm:text-6xl lg:text-7xl font-bold"
+                    >
+                      {data.title}
+                    </h1>
+                    <h1
+                      data-aos="zoom-out"
+                      data-aos-duration="500"
+                      data-aos-once="true"
+                      className="text-5xl uppercase text-white dark:text-white/5 sm:text-[80px] md:text-[100px] xl:text-[150px] font-bold"
+                    >
+                      {data.title2}
+                    </h1>
+                    <div
+                      data-aos="fade-up"
+                      data-aos-offset="0"
+                      data-aos-duration="500"
+                      data-aos-delay="300"
+                    >
+                      <Button
+                        text="Comprar Ahora"
+                        bgColor="bg-red-500"
+                        textColor="text-white"
                       />
                     </div>
                   </div>
                   {/* seccion img */}
                   <div className="order-1 sm:order-2">
-                    <div>
+                    <div data-aos="zoom-int" data-aos-once="true" className="relative z-10">
                       <img
                         src={data.img}
                         alt=""

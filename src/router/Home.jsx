@@ -7,6 +7,8 @@ import Services from "../components/Services/Services";
 import Products from "../components/Products/Products";
 import Banner from "../components/Banner/Banner";
 import imagen from "../assets/images/Image1.webp"
+import Blogs from "../components/Blogs/Blogs";
+import Partners from "../components/Partners/Partners";
 
 const BannerData={
   discount: "40% OFF",
@@ -19,6 +21,17 @@ const BannerData={
   bgColor: "#f42c37"
 }
 
+const BannerData2={
+  discount: "40% OFF",
+  title: "PILSEN CERVEZA",
+  date: "28 de Julio",
+  image: imagen,
+  title2: "PROMOCIÓN ESPECIAL",
+  title3: "Llévate tu bebida favorita al mejor precio",
+  title4: "Válido hasta agotar stock",
+  bgColor: "#2dcc6f"
+}
+
 export default function Home() {
   return (
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-hidden">
@@ -28,6 +41,10 @@ export default function Home() {
       <Services/>
       <Banner data={BannerData}/>
       <Products/>
+      <Banner data={BannerData2}/>
+      <Blogs/>
+      <Partners/>
+
     </div>
   );
 }
